@@ -36,7 +36,7 @@ printShoppingList() {
 removeItemFromList(){
       print("=== Which item do you want to remove? ===");
       printShoppingList();
-      int item = int.parse(stdin.readLineSync() ?? '0');
+      int item = int.parse(stdin.readLineSync() ?? '0'); // recebe o que foi digitado em texto, depois converte em
       productsList.removeAt(item); // remove o item escolhido na lista
       print("=== Item removed ===");
 }
